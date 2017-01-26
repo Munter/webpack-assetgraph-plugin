@@ -1,0 +1,37 @@
+{
+  "name": "webpack-assetgraph-plugin",
+  "version": "0.0.0",
+  "description": "EXPERIMENTAL! Assetgraph plugin for webpack that will include all referenced external assets in the build",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munter/webpack-assetgraph-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "assetgraph",
+    "plugin"
+  ],
+  "author": "Peter Müller <munter@fumle.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Munter/webpack-assetgraph-plugin/issues"
+  },
+  "homepage": "https://github.com/Munter/webpack-assetgraph-plugin#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "mocha": "^3.2.0",
+    "unexpected": "^10.23.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "assetgraph": "^3.0.0-38"
+  }
+}
