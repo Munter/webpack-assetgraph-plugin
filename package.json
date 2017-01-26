@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint lib test",
     "test": "npm run lint && mocha",
-    "travis": "mocha"
+    "travis": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,13 @@
   "homepage": "https://github.com/Munter/webpack-assetgraph-plugin#readme",
   "devDependencies": {
     "eslint": "^3.14.1",
+    "html-webpack-plugin": "^2.26.0",
     "mocha": "^3.2.0",
     "unexpected": "^10.23.0",
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "assetgraph": "^3.0.0-38"
+    "assetgraph": "^3.0.0-38",
+    "urltools": "^0.3.1"
   }
 }
