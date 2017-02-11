@@ -20,7 +20,7 @@ Usage
 In your Webpack configuration add webpack-assetgraph-plugin like so:
 
 ```js
-var WebpackAssetgraphPlugin require('webpack-assetgraph-plugin');
+var WebpackAssetgraphPlugin = require('webpack-assetgraph-plugin');
 
 module.exports = {
   context: 'path/to/source/root',
