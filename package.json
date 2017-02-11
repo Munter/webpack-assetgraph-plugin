@@ -1,6 +1,6 @@
 {
   "name": "webpack-assetgraph-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "EXPERIMENTAL! Assetgraph plugin for webpack that will include all referenced external assets in the build",
   "main": "lib/index.js",
   "directories": {
