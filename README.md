@@ -1,7 +1,7 @@
 webpack-assetgraph-plugin
 =========================
 
-[![NPM version](https://badge.fury.io/js/assetgraph.svg)](http://badge.fury.io/js/webpack-assetgraph-plugin)
+[![NPM version](https://badge.fury.io/js/webpack-assetgraph-plugin.svg)](http://badge.fury.io/js/webpack-assetgraph-plugin)
 [![Build Status](https://travis-ci.org/Munter/webpack-assetgraph-plugin.svg?branch=master)](https://travis-ci.org/Munter/webpack-assetgraph-plugin)
 [![Coverage Status](https://img.shields.io/coveralls/Munter/webpack-assetgraph-plugin.svg)](https://coveralls.io/r/Munter/webpack-assetgraph-plugin?branch=master)
 [![Dependency Status](https://david-dm.org/Munter/webpack-assetgraph-plugin.svg)](https://david-dm.org/Munter/webpack-assetgraph-plugin)
