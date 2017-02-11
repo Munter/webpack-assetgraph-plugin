@@ -37,7 +37,7 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "assetgraph": "^3.0.0-38",
+    "assetgraph": "^3.0.0-39",
     "urltools": "^0.3.1"
   }
 }
