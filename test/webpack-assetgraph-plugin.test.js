@@ -1,8 +1,10 @@
 var expect = require('unexpected').clone();
 
 var webpack = require('webpack');
-// var plugin = require('../lib');
+var AssetgraphPlugin = require('../lib');
 var config = require('../webpack.config.test');
+
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 function testWebpackWithConfig (config, expectedFiles) {
   var compiler = webpack(config);
@@ -31,9 +33,38 @@ function testWebpackWithConfig (config, expectedFiles) {
 }
 
 describe('webpack-assetgraph-plugin', function () {
-  it('should not fail', function () {
+  it('should load a basic test case with only one file', function () {
     return testWebpackWithConfig(config, [
       'output.js'
     ]);
+  });
+
+  describe('html-webpack-plugin', function () {
+    it.only('should load secondary pages, images and stylesheets', function () {
+      var config = {
+        bail: true,
+        context: './testdata/html-webpack-plugin/',
+        entry: './entry.js',
+        output: {
+          path: '.testgarbage',
+          filename: 'output.js'
+        },
+        plugins: [
+          new AssetgraphPlugin(),
+          new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './index.html'
+          })
+        ]
+      };
+
+      return testWebpackWithConfig(config, [
+        'output.js',
+        'index.html',
+        'style.css',
+        'image.png',
+        'about.html'
+      ]);
+    });
   });
 });
